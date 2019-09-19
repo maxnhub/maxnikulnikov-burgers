@@ -1,11 +1,15 @@
 .player {
     position: relative;
     display: inline-block;
-    width: 80%;
+    width: 50%;
     &.hidden {
         opacity: 0;
         transition: opacity 0.3s;
     }
+}
+
+#yt-player {
+    width: 50%;
 }
 
 .player__splash {

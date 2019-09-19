@@ -1,0 +1,33 @@
+@import '../blocks/helper.scss';
+
+.socials {
+  @include flex-row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+
+  &__link {
+    display: flex;
+    margin-right: 1.25rem;
+    width: 2rem;
+    height: 2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}  
+
+.socials-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: white;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+

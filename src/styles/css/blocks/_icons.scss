@@ -1,0 +1,28 @@
+@import '../blocks/helper.scss';
+
+
+.phone-icon {
+  fill: $dark-orange-color;
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+.burger-icon {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  fill: white;
+  margin-bottom: 0.625rem;
+
+}
+
+.kkal-icon {
+  width: 3.75rem;
+  height: 3.75rem;
+  fill: white;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+

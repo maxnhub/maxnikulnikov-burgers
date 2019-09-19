@@ -1,0 +1,25 @@
+.button-order {
+  display: inline-block;
+  padding: 1rem 1.3rem;
+  border-radius: 3px;
+  color: white;
+  background: #e45028;
+  transition: 0.4s;
+  font-family: 'Ubuntu-Medium', 'Trebuchet MS', sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &--burgers {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &--header {
+    font-size: 0.7rem;
+  }
+}

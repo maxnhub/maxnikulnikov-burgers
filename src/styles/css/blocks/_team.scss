@@ -1,0 +1,81 @@
+@import '../blocks/helper.scss';
+
+.team {
+  width: 50%;
+  background: rgba(52, 54, 56, 0.9);
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  &__item {
+    margin-bottom: 1.5rem;
+    transition: 0.5s;
+    text-align: left;
+    padding-left: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--active .team__field {
+    height: 8rem;
+    margin-left: 5%;
+    }
+
+    &--active .team__link {
+      color: $orange-color;
+    }
+
+    &--active .team__link:before {
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-bottom: 8px solid $orange-color;
+      border-left: 6px solid  transparent;
+      border-right: 6px solid transparent;
+      border-top: none;
+      margin-right: 0.8rem;
+      transition: 0.4s;
+    }
+  }
+
+  &__field {
+    height: 0;
+    overflow: hidden;
+  }
+
+  &__member {
+    @extend %ubuntu14;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.2rem;
+  }
+}
+
+.team__link {
+  font-family: 'Gagalin-Regular', 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+  color: white;
+  transition: 0.5s;
+  margin-bottom: 1.5rem;
+}
+
+.team__link:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid $orange-color;
+  border-left: 6px solid  transparent;
+  border-right: 6px solid transparent;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+

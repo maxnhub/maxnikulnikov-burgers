@@ -1,0 +1,45 @@
+@import '../blocks/helper.scss';
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &__visual {
+    position: relative;
+    display: flex;
+    width: 28.125rem;
+    height: 25rem;
+    justify-content: center;
+
+    &:after {
+      content: '';
+      position: absolute;
+      background: url(../src/images/drops.png) center center/contain no-repeat;
+      top: 2rem;
+      width: 26rem;
+      height: 15rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25rem;
+  }
+
+  &__text {
+    font-family: 'Lifehack-Medium', 'Trebuchet MS', sans-serif;
+    font-size: 3.875rem;
+    color: white;
+    padding-top: 3.125rem;
+    text-align: left;
+  }
+}

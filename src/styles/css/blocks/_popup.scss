@@ -1,0 +1,62 @@
+.popup {
+  background: #fff;
+  border-radius: 3px;
+  min-width: 31.25rem;
+  min-height: 15.625rem;
+  position: fixed;
+  top:50%;
+  left: 50%;
+  z-index: 10;
+  transform:translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  visibility:hidden;
+  padding: 1.5rem;
+
+  &__exit {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+
+    &-stick {
+      transform:rotate(50deg);
+
+      &, &:after {
+        background: #ec8468;
+        width: 1.5rem;
+        height: 0.3125rem;
+        border-radius: 0.1875rem;
+      }
+    
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        transform:rotate(80deg);
+        bottom: 0;
+      }
+    }
+  }
+
+  &--active {
+    visibility: visible;
+  } 
+  
+  &__title, &__text{
+    color:black;
+  }
+
+  &__title {
+    font-family: 'Gagalin-Regular', 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    font-family: 'Ubuntu', 'Trebuchet MS', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    text-align: left;
+  }
+}

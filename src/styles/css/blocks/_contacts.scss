@@ -1,0 +1,40 @@
+@import '../blocks/helper.scss';
+
+.contacts {
+  font-family: 'Ubuntu', 'Trebuchet MS', sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 500;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &__text {
+    margin-bottom: 0.9375rem;
+    font-style: normal;
+  }
+
+  &__tel {
+    font-weight: 600;
+    color: $dark-orange-color;
+    display: flex;
+    flex-direction: row;
+    transition: 0.5s;
+
+    &:hover {
+      color: $orange-color;
+
+      & .phone-icon {
+        fill: $orange-color;
+      }
+    }
+  }
+
+  &__img {
+    margin-right: 0.625rem;
+  }
+}
+
+

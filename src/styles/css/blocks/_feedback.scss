@@ -1,0 +1,106 @@
+@import '../blocks/helper.scss';
+
+.feedback__list {
+  @include flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.feedback__item {
+  width: 25%;
+  height: 50%;
+  background: url(../src/images/feedback1.png) center center / cover no-repeat;
+
+  &--two {
+    background: url(../src/images/feedback2.png) 65% 25% / cover no-repeat;
+    background-size: cover;
+  }
+
+  &--three {
+    background: url(../src/images/feedback3.png) 55% 18% / cover no-repeat;
+    background-size: cover;
+  }
+
+  &--four {
+    background: url(../src/images/feedback4.png) 100% 40% / cover no-repeat;
+    background-size: cover;
+  }
+
+  &--five {
+    background: url(../src/images/feedback5.png) 0% 0% / cover no-repeat;
+    background-size: cover;
+  }
+
+  &--six {
+    background: url(../src/images/feedback6.png) 60% 0% / cover no-repeat;
+    background-size: cover;
+  }
+
+  &--seven {
+    background: url(../src/images/feedback7.png) 35% 0% / cover no-repeat;
+    background-size: cover;
+  }
+
+  &--eight {
+    background: url(../src/images/feedback8.png) 90% 20% / cover no-repeat;
+    background-size: cover;
+  }
+}
+
+
+.feedback__story {
+  transition: 0.2s;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgba(52, 54, 56, 0);
+  height: 100%;
+  visibility: hidden;
+  padding-top: 1.5rem;
+}
+
+.feedback__subtitle {
+  font-family: 'Gagalin-Regular', 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  transition: 0.2s;
+}
+
+
+.feedback__text {
+  font-family: 'Ubuntu', 'Trebuchet MS', sans-serif;
+  font-size: 0.875rem;
+  color: white;
+  line-height: 1.5rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  transition: 0.2s;
+}
+
+.feedback__btn {
+  border: none;
+  border-radius: 0.1875rem;
+  background: rgba(52, 54, 56, 1);
+  padding: 0.625rem 1.25rem;
+  font-family: 'Ubuntu-Medium', 'Ubuntu', 'Trebuchet MS', sans-serif;
+  font-size: 0.875rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  outline: none;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+}
+
+.feedback__item:hover .feedback__story {
+  background: rgba(52, 54, 56, 0.7);
+  visibility: visible;
+}
+

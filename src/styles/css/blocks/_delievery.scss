@@ -1,0 +1,85 @@
+@import '../blocks/helper.scss';
+
+.delievery {
+  background: url('../src/images/delievery2-bg.png') 50% 50% / cover no-repeat;
+  height: 100%;
+  width: 100%;
+
+  &__field {
+    @include flex-row;
+  }
+
+  &__item {
+    @include flex-start;
+    flex-direction: column;
+    width: 50%;
+    font-family: 'Ubuntu', 'Trebuchet MS', sans-serif;
+    font-size: 0.875rem;
+    color: white;
+
+    &:first-child {
+      margin-right: 1.25rem;
+    }
+  }
+
+  &__row {
+    @include flex-row;
+    justify-content: flex-start;
+    margin-bottom: 1.25rem;
+
+    & .delievery__block:last-child {
+      padding-right: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__block, &__textarea {
+    padding-right: 1.25rem;
+    @include flex-start;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__textarea {
+    padding-right: 0;
+  }
+
+  &__subtext {
+    padding-bottom: 0.625rem;
+    text-align: left;
+  }
+
+  &__form {
+    border-radius: 0.1875rem;
+    width: 100%;
+    padding: 0.625rem 0.9375rem;
+    border: 0.1875rem solid transparent;
+
+    &--center {
+      text-align: center;
+    }
+
+    &--textarea {
+      resize: none;
+      height: 8.1875rem;
+    }
+
+    &:focus {
+      border: 0.1875rem solid $orange-color;
+      outline: none;
+    }
+  }
+
+  &__answers {
+    @include flex-row;
+    justify-content: space-between;
+    padding-top: 1.875rem;
+
+    & .form__label:first-child {
+      margin-right: 1.875rem;
+    }
+  }
+}

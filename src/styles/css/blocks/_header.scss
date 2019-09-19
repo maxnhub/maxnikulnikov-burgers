@@ -1,0 +1,11 @@
+@import '../blocks/helper.scss';
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.625rem; 
+}
+
+

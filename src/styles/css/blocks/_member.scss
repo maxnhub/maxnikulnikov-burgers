@@ -1,0 +1,37 @@
+.member__title {
+  font-weight: 600;
+  margin-bottom: 1.5625rem;
+}
+
+.member__text {
+  line-height: 1.5625rem;
+  font-weight: 500;
+}
+
+.member__description {
+  width: 78%;
+  padding-left: 1.875rem;
+  text-align: left;
+}
+
+.member__avatar {
+  display: inline-block;
+  height: 6.25rem;
+  width: 6.25rem;
+  min-height: 6.25rem;
+  overflow: hidden;
+  border-radius: 50% 50%;
+  background: #2f3234 url(../src/icons/logo.svg) no-repeat 50% 50%;
+  flex-shrink: 0;
+
+  &-img {
+    min-width: 100%;
+    display: block;
+  }
+
+  &--richard {
+    background: #2f3234 url(../src/images/richard-james.png) no-repeat 75%;
+  }
+}
+
+

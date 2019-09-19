@@ -1,0 +1,298 @@
+@media (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+    .menu__item {
+        margin-right: 0.5rem;
+        &:after {
+            margin-left: 0.5rem;
+        }
+    }
+    .food__vertical {
+        width: 4.25rem;
+    }
+    .food__name {
+        font-size: 1.8rem;
+    }
+    .food__description {
+        font-size: 0.775rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+    .slogan {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 0;
+    }
+    .slogan__text {
+        text-align: center;
+    }
+    .menu {
+        display: none;
+    }
+    .menu--active {
+        display: flex;
+    }
+    .page--burgers {
+        position: relative;
+    }
+    .arrow__slide--left {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+    }
+    .arrow__slide--right {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+    }
+    .button-order--header {
+        margin-left: auto;
+        margin-right: 4rem;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+    .burger {
+        padding-top: 0.625rem;
+        flex-direction: column;
+    }
+    .burger__avatar {
+        width: 95%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .burger__ingredients-kkal {
+        position: absolute;
+        top: 0;
+        left: 80%;
+    }
+    .kkal__name {
+        position: absolute;
+        top: 5%;
+        left: 30%;
+    }
+    .kkal__text {
+        top: 9%;
+        left: 21%;
+    }
+    .burger__item {
+        width: 75%;
+        margin-right: 0;
+    }
+    .burger__item--description {
+        text-align: center;
+    }
+    .team {
+        width: 100%;
+        background: rgba(52, 54, 56, 0.9);
+    }
+    .team__item {
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+    }
+    .team__item--active {
+        height: 100%;
+    }
+    .team__item--active .team__field {
+        display: flex;
+        height: 100%;
+    }
+    .team__list {
+        align-items: center;
+    }
+    .team__member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .member__description {
+        text-align: center;
+        padding: 0;
+        width: auto;
+    }
+    .member__avatar {
+        margin-bottom: 0.8rem;
+    }
+    .page--feedback .container--flex {
+        display: block;
+    }
+    .page--feedback .container {
+        margin: 0;
+        max-width: 0;
+    }
+    .feedback__list {
+        width: 100vw;
+    }
+    .feedback__item {
+        width: 50%;
+        height: 25vh;
+    }
+    .delievery__field {
+        flex-direction: column;
+        align-items: center;
+    }
+    .delievery__item {
+        width: 100%;
+        &:first-child {
+            margin-right: 0;
+            margin-bottom: 1.25rem;
+        }
+    }
+    .delievery__title {
+        padding-top: 1.75rem;
+    }
+    .delievery__answers {
+        padding-top: 0;
+    }
+    .pagination {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+    .slogan {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 0;
+        &__text {
+            padding-top: 0;
+            font-size: 2.875rem;
+        }
+    }
+    .slogan__visual {
+        width: 19.125rem;
+        height: 18rem;
+        &:after {
+            width: 20rem;
+            height: 11rem;
+        }
+    }
+    .page__title {
+        font-size: 3.65rem;
+        &--webest {
+            padding-top: 1.75rem;
+            margin-bottom: 2.125rem;
+        }
+        &--orange {
+            margin-bottom: 1.125rem;
+        }
+        &--work {
+            padding-top: 0;
+            margin-bottom: 1.125rem;
+        }
+        &--delievery {
+            font-size: 2.65rem;
+        }
+    }
+    .about-us__list {
+        flex-direction: column;
+    }
+    .about-us__item {
+        flex-direction: row;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 8%;
+    }
+    .about-us__icon {
+        margin-bottom: 0;
+        min-width: 7rem;
+    }
+    .about-us__desc {
+        text-align: left;
+        margin-left: 1.1rem;
+    }
+    .about-us__name {
+        margin-bottom: 4%;
+    }
+    .team__list {
+        align-items: center;
+    }
+    .description__text {
+        padding: 1.125rem 0;
+    }
+    .burger__ingredients {
+        top: 1.875rem;
+    }
+    .burger__ingredients-kkal {
+        top: 1.875rem;
+    }
+    .kkal__name {
+        top: 5%;
+    }
+    .kkal__text {
+        top: 10%;
+    }
+    .button-order--burgers {
+        bottom: 3.75rem;
+    }
+    .popup {
+        min-width: 26.25rem;
+        min-height: 17.625rem;
+    }
+    .team__item {
+        padding-left: 0;
+    }
+    .team__member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .page--feedback .container--flex {
+        display: block;
+    }
+    .page--feedback .container {
+        margin: 0;
+        max-width: 0;
+    }
+    .feedback__text {
+        display: none;
+    }
+    .feedback__story {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .feedback__subtitle {
+        font-size: 1.3rem;
+    }
+    .feedback__btn {
+        font-size: 1.1rem;
+    }
+    .floor {
+        display: none;
+    }
+    .delievery__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .delievery__row:nth-child(3) .delievery__block:nth-child(3) {
+        padding-right: 0;
+    }
+    .footer .container--flex {
+        flex-direction: column;
+    }
+    .contacts,
+    .socials {
+        width: auto;
+        text-align: center;
+    }
+    .contacts__tel {
+        margin: 0 auto;
+    }
+}

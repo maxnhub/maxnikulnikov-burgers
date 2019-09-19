@@ -1,4 +1,4 @@
-const { src, dest, task, series, watch, parallel } = require('gulp');
+const { src, dest, task, series, parallel } = require('gulp');
 const rm = require('gulp-rm');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
@@ -28,7 +28,7 @@ task('clean', () => {
 task('copy:html', () => {
     return src(`${SRC_PATH}/*.html`)
         .pipe(dest(DIST_PATH))
-        .pipe(reload({ stream: true }));
+        //.pipe(reload({ stream: true }));
 })
 
 task('styles', () => {
@@ -46,7 +46,7 @@ task('styles', () => {
         .pipe(gulpif(env === 'prod', cleanCSS()))
         .pipe(gulpif(env === 'dev', sourcemaps.write()))
         .pipe(dest(DIST_PATH))
-        .pipe(reload({ stream: true }));
+        //.pipe(reload({ stream: true }));
 });
 
 const libs = [
@@ -65,7 +65,7 @@ task('scripts', () => {
         .pipe(gulpif(env === 'prod', uglify()))
         .pipe(gulpif(env === 'dev', sourcemaps.write()))
         .pipe(dest(DIST_PATH))
-        .pipe(reload({ stream: true }));
+        //.pipe(reload({ stream: true }));
 });
 
 //task('server', () => {

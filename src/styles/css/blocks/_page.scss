@@ -1,86 +1,75 @@
 @import '../blocks/helper.scss';
-
 .page {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-
-  &--main {
-    background: url('../src/images/wemade-bg.png') center center / cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  &--webest {
-    background: url('../src/images/webest-bg.png') center center / cover no-repeat;
-  }
-
-  &__title {
-    @extend %Gagalin-Reg75;
-    color: #2f3234;
-    margin: 0 auto;
-    padding-top: 8.75rem;
-    margin-bottom: 3.125rem;
-
-    &--slogan {
-      color: $orange-color;
-      padding: 0;
-      margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    &--main {
+        background: url('../src/images/wemade-bg.png') center center / cover no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
-
-    &--orange {
-      color: $orange-color;
+    &--webest {
+        background: url('../src/images/webest-bg.png') center center / cover no-repeat;
     }
-
+    &__title {
+        @extend %Gagalin-Reg75;
+        color: #2f3234;
+        margin: 0 auto;
+        padding-top: 8.75rem;
+        margin-bottom: 3.125rem;
+        &--slogan {
+            color: $orange-color;
+            padding: 0;
+            margin: 0;
+        }
+        &--orange {
+            color: $orange-color;
+        }
+        &--food {
+            font-family: 'Gagalin-Regular', 'Trebuchet MS', sans-serif;
+            font-size: 4.6875rem;
+            position: absolute;
+            top: 4rem;
+            left: 5rem;
+            color: white;
+            padding: 0;
+            z-index: 1;
+        }
+        &--work {
+            padding-top: 2.5rem;
+        }
+    }
+    &--burgers {
+        background: linear-gradient(to bottom, #f9b43b 0% 25%, #eb8c38 50%, #f9b43b 65% 100%);
+        display: flex;
+        align-items: center;
+    }
+    &--team {
+        display: flex;
+        justify-content: flex-end;
+        background: url('../src/images/team-bg.png') center center / cover no-repeat;
+    }
     &--food {
-      font-family: 'Gagalin-Regular', 'Trebuchet MS', sans-serif;
-      font-size: 4.6875rem;
-      position: absolute;
-      top: 4rem;
-      left: 5rem;
-      color: white;
-      padding: 0;
-      z-index: 1;
+        background: url('../src/images/menu-bg.png') center center / cover no-repeat;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
     }
-  }
-
-  &--burgers {
-    background: linear-gradient(to bottom,#f9b43b 0% 25%, #eb8c38 50%, #f9b43b 65% 100%);  
-    display: flex;
-    align-items: center;
-  }
-
-  &--team {
-    display: flex;
-    justify-content: flex-end;
-    background: url('../src/images/team-bg.png') center center / cover no-repeat;
-  }
-
-  &--food {
-    background: url('../src/images/menu-bg.png') center center / cover no-repeat;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  &--feedback {
-    background: rgba(52, 54, 56, 0.7);
-    display: flex;
-  }
-
-  &--work {
-    background: url('../src/images/howwework-bg.png') center center / cover no-repeat;
-  }
-
-  &--delievery {
-    background: url('../src/images/delievery-bg.png') 50% 50% / cover no-repeat, url('../src/images/delievery2-bg.png');
-    display: flex;
-    justify-content: center;
-  }
-
-  &--map {
-    display: flex;
-    position: relative;
-  }
+    &--feedback {
+        background: rgba(52, 54, 56, 0.7);
+        display: flex;
+    }
+    &--work {
+        background: url('../src/images/howwework-bg.png') center center / cover no-repeat;
+    }
+    &--delievery {
+        background: url('../src/images/delievery-bg.png') 50% 50% / cover no-repeat, url('../src/images/delievery2-bg.png');
+        display: flex;
+        justify-content: center;
+    }
+    &--map {
+        display: flex;
+        position: relative;
+    }
 }

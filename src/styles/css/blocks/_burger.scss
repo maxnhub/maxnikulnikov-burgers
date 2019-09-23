@@ -1,149 +1,131 @@
 @import '../blocks/helper.scss';
-
 .burger {
-  @extend %flex-center;
-  flex-direction: row;
-  position: relative;
-  min-width: 100%;
-
-  &__item {
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    &--description {
-      text-align: left;
-    }
-  }
-
-  &__avatar {
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  &__ingredients {
-    position: absolute;
-    top: 0;
-    left: 0;
     @extend %flex-center;
-    flex-direction: column;
-    border-radius: 3px;
-    background: #f08c33;
-    padding: 0.95rem 1.55rem;
-    font-family: 'Gagalin-Regular', 'Trebuchet MS', sans-serif;
-    font-size: 0.875rem;
-    color: white;
-
-    &-drop {
-      position: absolute;
-      top: 0;
-      left: 100%;
-      background: rgba(250, 252, 253, 0.9);
-      border-radius: 3px;
-      width: 14.875rem;
-      display: none;
-      padding: 0.675rem;
+    flex-direction: row;
+    position: relative;
+    min-width: 100%;
+    &__item {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        &--description {
+            text-align: left;
+        }
     }
-
-    &-list {
-      display: flex;
-      flex-direction: column;
+    &__avatar {
+        max-width: 100%;
+        max-height: 100%;
     }
-
-    &-item {
-      display: flex;
-      align-items: center;
-      font-family: 'Ubuntu', 'Trebuchet MS', sans-serif;
-      font-size: 0.875rem;
-      color: black;
-      font-weight: bold;
-      margin-bottom: 0.675rem;
-
-      &:last-child{
-        margin-bottom: 0;
-      }
+    &__ingredients {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @extend %flex-center;
+        flex-direction: column;
+        border-radius: 3px;
+        background: #f08c33;
+        padding: 0.95rem 1.55rem;
+        font-family: 'Gagalin-Regular', 'Trebuchet MS', sans-serif;
+        font-size: 0.875rem;
+        color: white;
+        &-drop {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background: rgba(250, 252, 253, 0.9);
+            border-radius: 3px;
+            width: 14.875rem;
+            display: none;
+            padding: 0.675rem;
+        }
+        &-list {
+            display: flex;
+            flex-direction: column;
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            font-family: 'Ubuntu', 'Trebuchet MS', sans-serif;
+            font-size: 0.875rem;
+            color: black;
+            font-weight: bold;
+            margin-bottom: 0.675rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &-icon {
+            width: 3rem;
+            height: 3rem;
+            margin-right: 0.675rem;
+            &--darkorange {
+                fill: #e35028;
+            }
+            &--orange {
+                fill: #f9b43b;
+            }
+            &--green {
+                fill: #8ac03e;
+            }
+        }
+        &-kkal {
+            position: absolute;
+            bottom: 5%;
+            left: 0;
+            font-family: 'Gagalin-Regular', 'Trebuchet MS', sans-serif;
+            font-size: 1rem;
+            color: white;
+            opacity: 0.5;
+            transition: 0.5s;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        &:hover .burger__ingredients-drop {
+            display: block;
+        }
     }
-
-    &-icon {
-      width: 3rem;
-      height: 3rem;
-      margin-right: 0.675rem;
-
-      &--darkorange {
-        fill: #e35028;
-      }
-
-      &--orange {
-        fill: #f9b43b; 
-      }
-
-      &--green {
-        fill: #8ac03e;
-      }
+    &__slider {
+        overflow: hidden;
+        display: flex;
     }
-
-    &-kkal {
-      position: absolute;
-      bottom: 5%;
-      left: 0;
-      font-family: 'Gagalin-Regular', 'Trebuchet MS', sans-serif;
-      font-size: 1rem;
-      color: white;
-      opacity: 0.5;
-      transition: 0.5s;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-
-    
-    &:hover .burger__ingredients-drop {
-      display: block;
-    }
-  }
-
-  &__slider {
-    overflow: hidden;
-    display: flex;
-  }
 }
 
 .kkal__name {
-  position: absolute;
-  top: 45%;
-  left: 30%;
+    position: absolute;
+    top: 45%;
+    left: 30%;
 }
 
 .kkal__text {
-  position: absolute;
-  bottom: -25%;
-  left: 25%;
+    position: absolute;
+    bottom: -25%;
+    left: 25%;
 }
 
 .burger__title {
-  @extend %Gagalin-Reg75;
-  color: #ffffff;
-  line-height: 4rem;
-
-  &--red {
-    color: $dark-orange-color;
-  }
+    font-family: 'Gagalin-Regular', 'Trebuchet MS', sans-serif;
+    font-size: 4.65rem;
+    color: #ffffff;
+    line-height: 4rem;
+    &--red {
+        color: $dark-orange-color;
+    }
 }
 
 .description__text {
-  @extend %ubuntu14;
-  line-height: 1.25rem;
-  padding: 3.125rem 0 2.5rem 0;
+    @extend %ubuntu14;
+    line-height: 1.25rem;
+    padding: 3.125rem 0 2.5rem 0;
 }
 
 .sub {
-  font-size: 2.06rem;
+    font-size: 2.06rem;
 }
 
 .weight {
-  font-weight: 400;
-  margin-left: auto;
+    font-weight: 400;
+    margin-left: auto;
 }

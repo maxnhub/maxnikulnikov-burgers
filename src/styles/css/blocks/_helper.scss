@@ -1,30 +1,24 @@
 $orange-color: #f9b43b;
 $dark-orange-color: #e35028;
-
 @mixin flex-start {
-  display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 
 @mixin flex-row {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 %ubuntu14 {
-  font-family: 'Ubuntu', 'Trebuchet MS', sans-serif;
-  font-size: 0.875rem;
-  color: white;
+    font-family: 'Ubuntu', 'Trebuchet MS', sans-serif;
+    font-size: 0.875rem;
+    color: white;
 }
 
 %flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-%Gagalin-Reg75 {
-  font-family: 'Gagalin-Regular', 'Trebuchet MS', sans-serif;
-  font-size: 4.65rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

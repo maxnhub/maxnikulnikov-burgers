@@ -13,7 +13,8 @@
         background: url('../src/images/webest-bg.png') center center / cover no-repeat;
     }
     &__title {
-        @extend %Gagalin-Reg75;
+        font-family: 'Gagalin-Regular', 'Trebuchet MS', sans-serif;
+        font-size: 4.65rem;
         color: #2f3234;
         margin: 0 auto;
         padding-top: 8.75rem;

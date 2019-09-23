@@ -17,12 +17,6 @@
     .food__description {
         font-size: 0.775rem;
     }
-    .player {
-        width: 90%;
-    }
-    #yt-player {
-        width: 90%;
-    }
 }
 
 @media (max-width: 768px) {
@@ -34,6 +28,14 @@
         justify-content: flex-start;
         align-items: center;
         padding-top: 0;
+        &__visual {
+            width: 20.125rem;
+            height: 19rem;
+        }
+        &__text {
+            padding-top: 0;
+            font-size: 2.875rem;
+        }
     }
     .slogan__text {
         text-align: center;
@@ -46,6 +48,14 @@
     }
     .page--burgers {
         position: relative;
+    }
+    .page__title--work {
+        padding-top: 0;
+        margin-bottom: 1.125rem;
+    }
+    .page__title--webest {
+        padding-top: 0.75rem;
+        margin-bottom: 2.125rem;
     }
     .arrow__slide--left {
         position: absolute;
@@ -141,6 +151,12 @@
         width: 50%;
         height: 25vh;
     }
+    .player {
+        width: 100%;
+    }
+    #yt-player {
+        width: 100%;
+    }
     .delievery__field {
         flex-direction: column;
         align-items: center;
@@ -160,6 +176,28 @@
     }
     .pagination {
         display: none;
+    }
+    .description__text {
+        padding: 1.125rem 0;
+        position: relative;
+    }
+    .burger__title {
+        font-size: 2.65rem;
+    }
+    .burger__ingredients {
+        top: 2.5rem;
+    }
+    .burger__ingredients-kkal {
+        top: 2.5rem;
+    }
+    .kkal__name {
+        top: 5%;
+    }
+    .kkal__text {
+        top: 10%;
+    }
+    .button-order--burgers {
+        bottom: 2.75rem;
     }
 }
 
@@ -194,12 +232,9 @@
         &--orange {
             margin-bottom: 1.125rem;
         }
-        &--work {
-            padding-top: 0;
-            margin-bottom: 1.125rem;
-        }
         &--delievery {
-            font-size: 2.65rem;
+            font-size: 2.5rem;
+            padding-top: 0;
         }
     }
     .about-us__list {
@@ -213,7 +248,7 @@
     }
     .about-us__icon {
         margin-bottom: 0;
-        min-width: 7rem;
+        min-width: 5rem;
     }
     .about-us__desc {
         text-align: left;
@@ -221,31 +256,17 @@
     }
     .about-us__name {
         margin-bottom: 4%;
+        font-size: 1.2rem;
+    }
+    .about-us__text {
+        font-size: 0.7rem;
     }
     .team__list {
         align-items: center;
     }
-    .description__text {
-        padding: 1.125rem 0;
-    }
-    .burger__ingredients {
-        top: 1.875rem;
-    }
-    .burger__ingredients-kkal {
-        top: 1.875rem;
-    }
-    .kkal__name {
-        top: 5%;
-    }
-    .kkal__text {
-        top: 10%;
-    }
-    .button-order--burgers {
-        bottom: 3.75rem;
-    }
     .popup {
-        min-width: 26.25rem;
-        min-height: 17.625rem;
+        min-width: 23.25rem;
+        min-height: 19.625rem;
     }
     .team__item {
         padding-left: 0;
@@ -289,6 +310,9 @@
     }
     .delievery__row:nth-child(3) .delievery__block:nth-child(3) {
         padding-right: 0;
+    }
+    .delievery__form--textarea {
+        height: 5.1875rem;
     }
     .footer .container--flex {
         flex-direction: column;

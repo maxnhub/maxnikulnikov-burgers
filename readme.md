@@ -12,7 +12,7 @@
 
 ```sh
 1. git clone git@github.com:maxnhub/maxnikulnikov-burgers.git
-2. cd burgers
+2. cd maxnikulnikov-burgers
 3. npm i
 4. npm run build
 ```

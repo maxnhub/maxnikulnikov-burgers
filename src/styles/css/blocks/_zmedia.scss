@@ -151,11 +151,20 @@
         width: 50%;
         height: 25%;
     }
+    .feedback__subtitle {
+        margin-bottom: 6px;
+    }
+    .feedback__text {
+        margin-bottom: 6px;
+    }
     .player {
         width: 100%;
     }
     #yt-player {
         width: 100%;
+    }
+    .page__title--delievery {
+        padding-top: 45px
     }
     .delievery__field {
         flex-direction: column;
